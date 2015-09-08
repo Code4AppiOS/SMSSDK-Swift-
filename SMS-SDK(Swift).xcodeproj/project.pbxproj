@@ -1,0 +1,355 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C82442BF1B9E774E008CDC4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82442BE1B9E774E008CDC4C /* AppDelegate.swift */; };
+		C82442C11B9E774E008CDC4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82442C01B9E774E008CDC4C /* ViewController.swift */; };
+		C82442C41B9E774E008CDC4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C82442C21B9E774E008CDC4C /* Main.storyboard */; };
+		C82442C61B9E774E008CDC4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C82442C51B9E774E008CDC4C /* Images.xcassets */; };
+		C82442C91B9E774E008CDC4C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C82442C71B9E774E008CDC4C /* LaunchScreen.xib */; };
+		C82442E41B9E7775008CDC4C /* SMS_SDKLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C82442E01B9E7775008CDC4C /* SMS_SDKLocalizable.strings */; };
+		C82442E51B9E7775008CDC4C /* SMS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82442E21B9E7775008CDC4C /* SMS_SDK.framework */; };
+		C82442E71B9E7782008CDC4C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82442E61B9E7782008CDC4C /* MessageUI.framework */; };
+		C82442E91B9E778F008CDC4C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C82442E81B9E778F008CDC4C /* libz.dylib */; };
+		C82442EB1B9E7799008CDC4C /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C82442EA1B9E7799008CDC4C /* libicucore.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C82442B91B9E774E008CDC4C /* SMS-SDK(Swift).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SMS-SDK(Swift).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C82442BD1B9E774E008CDC4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C82442BE1B9E774E008CDC4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C82442C01B9E774E008CDC4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C82442C31B9E774E008CDC4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C82442C51B9E774E008CDC4C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C82442C81B9E774E008CDC4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C82442E11B9E7775008CDC4C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SMS_SDKLocalizable.strings; sourceTree = "<group>"; };
+		C82442E21B9E7775008CDC4C /* SMS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SMS_SDK.framework; sourceTree = "<group>"; };
+		C82442E31B9E7775008CDC4C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SMS_SDKLocalizable.strings"; sourceTree = "<group>"; };
+		C82442E61B9E7782008CDC4C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		C82442E81B9E778F008CDC4C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		C82442EA1B9E7799008CDC4C /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		C82442ED1B9E77DD008CDC4C /* SMSSDK-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SMSSDK-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C82442B61B9E774E008CDC4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C82442EB1B9E7799008CDC4C /* libicucore.dylib in Frameworks */,
+				C82442E91B9E778F008CDC4C /* libz.dylib in Frameworks */,
+				C82442E71B9E7782008CDC4C /* MessageUI.framework in Frameworks */,
+				C82442E51B9E7775008CDC4C /* SMS_SDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C82442B01B9E774E008CDC4C = {
+			isa = PBXGroup;
+			children = (
+				C82442ED1B9E77DD008CDC4C /* SMSSDK-Bridging-Header.h */,
+				C82442BB1B9E774E008CDC4C /* SMS-SDK(Swift) */,
+				C82442BA1B9E774E008CDC4C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C82442BA1B9E774E008CDC4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C82442B91B9E774E008CDC4C /* SMS-SDK(Swift).app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C82442BB1B9E774E008CDC4C /* SMS-SDK(Swift) */ = {
+			isa = PBXGroup;
+			children = (
+				C82442DF1B9E7775008CDC4C /* SMS_SDK */,
+				C82442DE1B9E7768008CDC4C /* 依赖库 */,
+				C82442BE1B9E774E008CDC4C /* AppDelegate.swift */,
+				C82442C01B9E774E008CDC4C /* ViewController.swift */,
+				C82442C21B9E774E008CDC4C /* Main.storyboard */,
+				C82442C51B9E774E008CDC4C /* Images.xcassets */,
+				C82442C71B9E774E008CDC4C /* LaunchScreen.xib */,
+				C82442BC1B9E774E008CDC4C /* Supporting Files */,
+			);
+			path = "SMS-SDK(Swift)";
+			sourceTree = "<group>";
+		};
+		C82442BC1B9E774E008CDC4C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C82442BD1B9E774E008CDC4C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C82442DE1B9E7768008CDC4C /* 依赖库 */ = {
+			isa = PBXGroup;
+			children = (
+				C82442EA1B9E7799008CDC4C /* libicucore.dylib */,
+				C82442E81B9E778F008CDC4C /* libz.dylib */,
+				C82442E61B9E7782008CDC4C /* MessageUI.framework */,
+			);
+			path = "依赖库";
+			sourceTree = "<group>";
+		};
+		C82442DF1B9E7775008CDC4C /* SMS_SDK */ = {
+			isa = PBXGroup;
+			children = (
+				C82442E01B9E7775008CDC4C /* SMS_SDKLocalizable.strings */,
+				C82442E21B9E7775008CDC4C /* SMS_SDK.framework */,
+			);
+			path = SMS_SDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C82442B81B9E774E008CDC4C /* SMS-SDK(Swift) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C82442D81B9E774E008CDC4C /* Build configuration list for PBXNativeTarget "SMS-SDK(Swift)" */;
+			buildPhases = (
+				C82442B51B9E774E008CDC4C /* Sources */,
+				C82442B61B9E774E008CDC4C /* Frameworks */,
+				C82442B71B9E774E008CDC4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SMS-SDK(Swift)";
+			productName = "SMS-SDK(Swift)";
+			productReference = C82442B91B9E774E008CDC4C /* SMS-SDK(Swift).app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C82442B11B9E774E008CDC4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = MOB;
+				TargetAttributes = {
+					C82442B81B9E774E008CDC4C = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = C82442B41B9E774E008CDC4C /* Build configuration list for PBXProject "SMS-SDK(Swift)" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = C82442B01B9E774E008CDC4C;
+			productRefGroup = C82442BA1B9E774E008CDC4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C82442B81B9E774E008CDC4C /* SMS-SDK(Swift) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C82442B71B9E774E008CDC4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C82442E41B9E7775008CDC4C /* SMS_SDKLocalizable.strings in Resources */,
+				C82442C41B9E774E008CDC4C /* Main.storyboard in Resources */,
+				C82442C91B9E774E008CDC4C /* LaunchScreen.xib in Resources */,
+				C82442C61B9E774E008CDC4C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C82442B51B9E774E008CDC4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C82442C11B9E774E008CDC4C /* ViewController.swift in Sources */,
+				C82442BF1B9E774E008CDC4C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C82442C21B9E774E008CDC4C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C82442C31B9E774E008CDC4C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C82442C71B9E774E008CDC4C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C82442C81B9E774E008CDC4C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		C82442E01B9E7775008CDC4C /* SMS_SDKLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C82442E11B9E7775008CDC4C /* en */,
+				C82442E31B9E7775008CDC4C /* zh-Hans */,
+			);
+			name = SMS_SDKLocalizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C82442D61B9E774E008CDC4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C82442D71B9E774E008CDC4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C82442D91B9E774E008CDC4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SMS-SDK(Swift)/SMS_SDK",
+				);
+				INFOPLIST_FILE = "SMS-SDK(Swift)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SMSSDK-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		C82442DA1B9E774E008CDC4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SMS-SDK(Swift)/SMS_SDK",
+				);
+				INFOPLIST_FILE = "SMS-SDK(Swift)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SMSSDK-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C82442B41B9E774E008CDC4C /* Build configuration list for PBXProject "SMS-SDK(Swift)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C82442D61B9E774E008CDC4C /* Debug */,
+				C82442D71B9E774E008CDC4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C82442D81B9E774E008CDC4C /* Build configuration list for PBXNativeTarget "SMS-SDK(Swift)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C82442D91B9E774E008CDC4C /* Debug */,
+				C82442DA1B9E774E008CDC4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C82442B11B9E774E008CDC4C /* Project object */;
+}
