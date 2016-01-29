@@ -15,11 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        //初始化SMS－SDK
-        SMS_SDK.registerApp("9d05b3e22722", withSecret: "931f48b5594757d0b87af3fa941d23eb")
+        //更换SMS－SDK 2.0 详情须知：http://bbs.mob.com/forum.php?mod=viewthread&tid=20051
+        //如何在Mob后台添加一个应用 ：  http://bbs.mob.com/forum.php?mod=viewthread&tid=8212
+        
+        //初始化SMS－SDK ,在MOB后台注册应用并获得AppKey 和AppSecret
+        SMSSDK.registerApp("ef0c55d2b850", withSecret: "62f2bf339354b721c1e0e97603630a15")
         
         //关闭访问通讯录
-        SMS_SDK.enableAppContactFriends(false)
+        SMSSDK.enableAppContactFriends(false)
         return true
     }
 

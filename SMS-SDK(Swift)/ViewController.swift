@@ -14,27 +14,31 @@ class ViewController: UIViewController {
     @IBOutlet weak var VerificationCode: UITextField!
     
     @IBAction func PhoneNumberSumbit(sender: UIButton) {
-        // zone：次参数可以写死，也可以使用‘+(void)getZone:(GetZoneBlock)result;’通过网络请求的方式获取区号
-        SMS_SDK.getVerificationCodeBySMSWithPhone(PhoneNumber.text, zone: "86") { (error:SMS_SDKError!) in
-            
-            if(error == nil){
-                print("请求成功,请等待短信～")
-            }else{
-                // 错误码可以参考‘SMS_SDKError.h’
-                print("请求失败")
+        
+        // zone：此参数可以写死，也可以使用 +(void)getCountryZone:(SMSGetZoneResultHandler)result; 通过网络请求的方式获取区号，此方法在'SMS_SDK.framework / SMSSDK+ExtexdMethods.h中'
+        SMSSDK.getVerificationCodeByMethod(SMSGetCodeMethodSMS, phoneNumber: PhoneNumber.text, zone: "86", customIdentifier: nil) { (error : NSError!) -> Void in
+        
+            if (error == nil)
+            {
+                 print("请求成功,请等待短信～")
+            }
+            else
+            {
+                // 错误码可以参考‘SMS_SDK.framework / SMSSDKResultHanderDef.h’
+                print("请求失败", error)
             }
         }
     }
     
     @IBAction func VerificationCodeSumbit(sender: UIButton) {
-        SMS_SDK.commitVerifyCode(VerificationCode.text, result: { (state:SMS_ResponseState) in
-            
-            if(state.value == 1){
+        
+        SMSSDK.commitVerificationCode(VerificationCode.text, phoneNumber: PhoneNumber.text, zone: "86") { (error : NSError!) -> Void in
+            if(error == nil){
                 print("验证成功")
             }else{
-                print("验证失败")
+                print("验证失败", error)
             }
-        })
+        }
     }
  
     
